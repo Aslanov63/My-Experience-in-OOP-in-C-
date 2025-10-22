@@ -55,9 +55,9 @@ void countingSort(vector<string>& quotes) {
 
    
     for (int i = 0; i < 26; ++i) {
-        if (!count[i].empty()) {
+        if (!count[i].empty()) {6
             cout << "[" << char('A' + i) << "] (" << count[i].size() << "):" << endl;
-            for (const auto& q : buckets[i]) {
+            for (const auto& q : count[i]) {
                 cout << q << endl;
             }
             cout << endl;
