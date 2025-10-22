@@ -5,12 +5,6 @@
 #include <vector>
 using namespace std;
 
-
-
-
-
-
-
 void printQuotes(const vector<string>& quotes) {
 
 for(const auto& q : quotes){
@@ -18,47 +12,63 @@ cout << q << endl;
 }
 }
 
-
-
 void brickSort(vector<string>& quotes) {
-bool sorting_status = false;
-int n = quotes.size();
-int step = 1;
+    bool sorted = false;
+    int n = quotes.size();
 
-cout<<"Swap number:"<< step++<<endl;
+    while (!sorted) {
+        sorted = true;
+       
+        for (int i = 0; i < n-1; i += 2) {
+            if (quotes[i] > quotes[i+1]) {
+                cout << "Swapping: " << quotes[i] << " and " << quotes[i+1] << endl;
+                swap(quotes[i], quotes[i+1]);
+                sorted = false;
+            }
+        }
+       
 
-while(!sorting_status){
-for (int i =0 ; i <=n-1 ; i+=2) {
-    if(quotes[i]> quotes [i+1]){
-        cout<<"Swapping: " << quotes[i] << " and " << quotes[i+1]<<"....." <<endl;
-        swap(quotes[i], quotes[i+1]);
-        sorting_status = false;
-        
+        for (int i = 1; i < n-1; i += 2) {
+            if (quotes[i] > quotes[i+1]) {
+                cout << "Swapping: " << quotes[i] << " and " << quotes[i+1] << endl;
+                swap(quotes[i], quotes[i+1]);
+                sorted = false;
+            }
+        }
     }
-for(int i=1; i< n-1; i+=2){
-    if(quotes[i]> quotes [i+1]){
-        cout<<"Swapping: " << quotes[i] << " and " << quotes[i+1]<<"....." <<endl;
-        swap(quotes[i], quotes[i+1]);
-        sorting_status = false;
-        
-    }
-
-
+    printQuotes(quotes);
 }
 
+void countingSort(vector<string>& quotes) {
 
-}
+    vector<vector<string>> count(26); //alpabet
+
+    
+    for (const auto& q : quotes) {
+        if (!q.empty()) {
+            char first = tolower(q[0]);
+            if (first >= 'a' && first <= 'z') {
+                count[first - 'a'].push_back(q); //for expmple of c index is 97 ,then 97 -5*index(95) equals to 2
+            }
+        }
+    }
+
+   
+    for (int i = 0; i < 26; ++i) {
+        if (!count[i].empty()) {
+            cout << "[" << char('A' + i) << "] (" << count[i].size() << "):" << endl;
+            for (const auto& q : buckets[i]) {
+                cout << q << endl;
+            }
+            cout << endl;
+        }
+    }
     
 
 
+   
+}
 
-}
-void countingSort(vector<string>& quotes) {
- 
- 
- 
-    // пока пусто
-}
 void quickSort(vector<string>& quotes) {
 
 
@@ -66,17 +76,13 @@ void quickSort(vector<string>& quotes) {
 
     // пока пусто
 }
+
 void insertionSort(vector<string>& quotes) {
 
 
 
-
-    // пока пусто
+  
 }
-
-
-
-
 
 int main(){
 
