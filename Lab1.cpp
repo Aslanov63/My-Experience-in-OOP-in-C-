@@ -12,18 +12,65 @@ using namespace std;
 
 
 void printQuotes(const vector<string>& quotes) {
-    // пока пусто
+
+for(const auto& q : quotes){
+cout << q << endl;
 }
+}
+
+
+
 void brickSort(vector<string>& quotes) {
-    // пока пусто
+bool sorting_status = false;
+int n = quotes.size();
+int step = 1;
+
+cout<<"Swap number:"<< step++<<endl;
+
+while(!sorting_status){
+for (int i =0 ; i <=n-1 ; i+=2) {
+    if(quotes[i]> quotes [i+1]){
+        cout<<"Swapping: " << quotes[i] << " and " << quotes[i+1]<<"....." <<endl;
+        swap(quotes[i], quotes[i+1]);
+        sorting_status = false;
+        
+    }
+for(int i=1; i< n-1; i+=2){
+    if(quotes[i]> quotes [i+1]){
+        cout<<"Swapping: " << quotes[i] << " and " << quotes[i+1]<<"....." <<endl;
+        swap(quotes[i], quotes[i+1]);
+        sorting_status = false;
+        
+    }
+
+
+}
+
+
+}
+    
+
+
+
 }
 void countingSort(vector<string>& quotes) {
+ 
+ 
+ 
     // пока пусто
 }
 void quickSort(vector<string>& quotes) {
+
+
+
+
     // пока пусто
 }
 void insertionSort(vector<string>& quotes) {
+
+
+
+
     // пока пусто
 }
 
