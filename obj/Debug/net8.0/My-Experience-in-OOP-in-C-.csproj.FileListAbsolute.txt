@@ -1,0 +1,15 @@
+/workspaces/My-Experience-in-OOP-in-C-/bin/Debug/net8.0/My-Experience-in-OOP-in-C-
+/workspaces/My-Experience-in-OOP-in-C-/bin/Debug/net8.0/My-Experience-in-OOP-in-C-.deps.json
+/workspaces/My-Experience-in-OOP-in-C-/bin/Debug/net8.0/My-Experience-in-OOP-in-C-.runtimeconfig.json
+/workspaces/My-Experience-in-OOP-in-C-/bin/Debug/net8.0/My-Experience-in-OOP-in-C-.dll
+/workspaces/My-Experience-in-OOP-in-C-/bin/Debug/net8.0/My-Experience-in-OOP-in-C-.pdb
+/workspaces/My-Experience-in-OOP-in-C-/obj/Debug/net8.0/My-Experience-in-OOP-in-C-.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/My-Experience-in-OOP-in-C-/obj/Debug/net8.0/My-Experience-in-OOP-in-C-.AssemblyInfoInputs.cache
+/workspaces/My-Experience-in-OOP-in-C-/obj/Debug/net8.0/My-Experience-in-OOP-in-C-.AssemblyInfo.cs
+/workspaces/My-Experience-in-OOP-in-C-/obj/Debug/net8.0/My-Experience-in-OOP-in-C-.csproj.CoreCompileInputs.cache
+/workspaces/My-Experience-in-OOP-in-C-/obj/Debug/net8.0/My-Experience-in-OOP-in-C-.sourcelink.json
+/workspaces/My-Experience-in-OOP-in-C-/obj/Debug/net8.0/My-Experience-in-OOP-in-C-.dll
+/workspaces/My-Experience-in-OOP-in-C-/obj/Debug/net8.0/refint/My-Experience-in-OOP-in-C-.dll
+/workspaces/My-Experience-in-OOP-in-C-/obj/Debug/net8.0/My-Experience-in-OOP-in-C-.pdb
+/workspaces/My-Experience-in-OOP-in-C-/obj/Debug/net8.0/My-Experience-in-OOP-in-C-.genruntimeconfig.cache
+/workspaces/My-Experience-in-OOP-in-C-/obj/Debug/net8.0/ref/My-Experience-in-OOP-in-C-.dll
